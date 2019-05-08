@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+	<small class="d-block text-right mt-3">
+		<a href="{{ path('micro_post_index') }}">Back to all posts</a>
+	</small>
+
+	{{ form_start(form) }}
+
+	{{ form_widget(form) }}
+
+	{{ form_end(form) }}
+
+{% endblock %}
